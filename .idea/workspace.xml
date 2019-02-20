@@ -2,68 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eed513c4-9807-434c-a250-903f12e23b87" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/actor_variable.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/critic_variable.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/checkpoint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/configuration.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/actor_variable.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/critic_variable.obj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/checkpoint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.data-00000-of-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/run_log.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/test.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/test.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/train_log.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/video.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549566874.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567013.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567197.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567256.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567287.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567335.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567371.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567440.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567487.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567563.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567603.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567702.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567734.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567789.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567946.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568037.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568072.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568200.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568272.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568343.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568495.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568558.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568622.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568649.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568671.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571321.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571345.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571369.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571829.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571947.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571998.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572047.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572109.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572137.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572180.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572195.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572535.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572672.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572713.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572740.chuanyu-Z170-WS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572892.chuanyu-Z170-WS" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_motion_capture.py" afterPath="$PROJECT_DIR$/run_motion_capture.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696669.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696744.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696785.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696809.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696848.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696879.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696911.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696962.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550696988.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550697008.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550697050.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1550697360.chuanyu-Z170-WS" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" afterPath="$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -146,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
@@ -166,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_motion_capture.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_motion_capture.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+            <state relative-caret-position="225">
+              <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -579,9 +530,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="1790" height="1028" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25027934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25027934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -946,21 +897,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="1009" column="45" lean-forward="true" selection-start-line="1009" selection-start-column="45" selection-end-line="1009" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="72" column="33" lean-forward="true" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
