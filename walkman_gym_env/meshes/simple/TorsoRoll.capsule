@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="/home/enrico/advr-superbuild/robots/iit-walkman-ros-pkg/walkman_urdf/meshes/simple/TorsoRoll.STL">
+  <link name="0.00100_0.00100_0.00100">
+    <collision>
+      <origin xyz="-0.00117848 3.10274e-06 0.05433983225" rpy="3.14158956355 -0.177536695491 -3.14155793487"/>
+      <geometry>
+        <cylinder radius="0.0708251" length="0.110584535096"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

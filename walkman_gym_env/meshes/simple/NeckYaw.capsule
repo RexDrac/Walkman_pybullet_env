@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="/home/enrico/advr-superbuild/robots/iit-walkman-ros-pkg/walkman_urdf/meshes/simple/NeckYaw.STL">
+  <link name="0.00100_0.00100_0.00100">
+    <collision>
+      <origin xyz="-1.7393985e-07 0.002752985 0.01419005" rpy="-1.36044433269 1.25158816642e-05 -1.01257098436e-05"/>
+      <geometry>
+        <cylinder radius="0.0377532" length="0.022939678379"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

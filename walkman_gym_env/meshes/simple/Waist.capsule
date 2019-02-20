@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="/home/enrico/advr-superbuild/robots/iit-walkman-ros-pkg/walkman_urdf/meshes/simple/Waist.STL">
+  <link name="0.00100_0.00100_0.00100">
+    <collision>
+      <origin xyz="0.0508469 -0.001857835 -0.07796165" rpy="1.12230860584 -0.0241241421054 -0.0151638847472"/>
+      <geometry>
+        <cylinder radius="0.160182" length="0.0141200063195"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

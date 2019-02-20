@@ -2,22 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eed513c4-9807-434c-a250-903f12e23b87" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/logs/events.out.tfevents.1549573236.chuanyu-Z170-WS" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.data-00000-of-00001" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.data-00000-of-00001" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.index" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.meta" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.data-00000-of-00001" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.data-00000-of-00001" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.index" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.meta" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/train_log.mat" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/train_log.mat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/walkman_gym_env" afterPath="$PROJECT_DIR$/walkman_gym_env" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/actor_variable.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/critic_variable.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/saved_networks/network.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/configuration.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/actor_variable.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/critic_variable.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/saved_networks/network.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/run_log.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/test.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/test.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/train_log.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/video.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549566874.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567013.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567197.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567256.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567287.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567335.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567371.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567440.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567487.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567563.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567603.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567702.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567734.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567789.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549567946.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568037.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568072.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568200.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568272.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568343.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568495.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568558.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568622.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568649.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549568671.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571321.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571345.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571369.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571829.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571947.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549571998.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572047.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572109.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572137.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572180.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572195.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572535.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572672.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572713.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572740.chuanyu-Z170-WS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1549572892.chuanyu-Z170-WS" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/actor_variable.obj" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/actor_variable.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/critic_variable.obj" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/best_network/critic_variable.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/actor_variable.obj" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/actor_variable.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/critic_variable.obj" afterPath="$PROJECT_DIR$/PPO/PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36/latest_network/critic_variable.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/configuration.py" afterPath="$PROJECT_DIR$/PPO/configuration.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py" afterPath="$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_motion_capture.py" afterPath="$PROJECT_DIR$/run_motion_capture.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,16 +78,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="841" column="66" lean-forward="true" selection-start-line="841" selection-start-column="66" selection-end-line="841" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="control.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/control.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,8 +105,8 @@
       <file leaf-file-name="run_3D_walk_imitation_PPO.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="153" column="62" lean-forward="true" selection-start-line="153" selection-start-column="62" selection-end-line="153" selection-end-column="62" />
+            <state relative-caret-position="240">
+              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -78,11 +114,63 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sensor_signal_process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hill_muscle_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PD_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/walkman_gym_env/PD_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="1009" column="45" lean-forward="true" selection-start-line="1009" selection-start-column="45" selection-end-line="1009" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__backup.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__backup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="run_motion_capture.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -95,30 +183,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
               <caret line="235" column="38" lean-forward="false" selection-start-line="235" selection-start-column="38" selection-end-line="235" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hill_muscle_controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configuration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TRPO/configuration.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -141,7 +205,6 @@
       <find>gaze</find>
       <find>leftShoulderRoll</find>
       <find>leftShoulderPitch</find>
-      <find>loadURDF</find>
       <find>self.jointIdx</find>
       <find>jointNameIdx</find>
       <find>checkFall</find>
@@ -152,7 +215,16 @@
       <find>total_mass</find>
       <find>jointIdx</find>
       <find>_reward_walk</find>
+      <find>filterClass</find>
+      <find>loadURDF</find>
+      <find>controllable_joints</find>
+      <find>getobservation</find>
+      <find>reward_walk</find>
+      <find>reward_walk2</find>
     </findStrings>
+    <replaceStrings>
+      <replace>walkman</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,25 +232,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/walkman_gym_env/PD_controller.py" />
-        <option value="$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py" />
-        <option value="$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py" />
         <option value="$PROJECT_DIR$/walkman_gym_env/walkman_bullet_mass_sims_fixed_arm.urdf" />
         <option value="$PROJECT_DIR$/TRPO/configuration.py" />
         <option value="$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" />
-        <option value="$PROJECT_DIR$/run_motion_capture.py" />
         <option value="$PROJECT_DIR$/common/control.py" />
         <option value="$PROJECT_DIR$/PPO/train_3D_walk_imitation_PPO.py" />
         <option value="$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py" />
-        <option value="$PROJECT_DIR$/walkman_gym_env/__init__.py" />
         <option value="$PROJECT_DIR$/PPO/configuration.py" />
+        <option value="$PROJECT_DIR$/walkman_gym_env/PD_controller.py" />
+        <option value="$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py" />
+        <option value="$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py" />
+        <option value="$PROJECT_DIR$/run_motion_capture.py" />
+        <option value="$PROJECT_DIR$/walkman_gym_env/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="52" />
-    <option name="width" value="1794" />
+    <option name="width" value="1790" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
@@ -266,40 +338,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Walkman_pybullet_env" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Walkman_pybullet_env" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PPO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PPO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="record" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3D_walk_imitation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="without_external_force_disturbance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2019_02_07_21.00.36" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -308,7 +346,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.run_3D_walk_imitation_PPO">
+  <component name="RunManager" selected="Python.run_motion_capture">
     <configuration default="false" name="run_motion_capture" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -519,9 +557,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.run_3D_walk_imitation_PPO" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_3D_walk_imitation_PPO" />
-        <item index="2" class="java.lang.String" itemvalue="Python.run_motion_capture" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run_motion_capture" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run_3D_walk_imitation_PPO" />
+        <item index="2" class="java.lang.String" itemvalue="Python.train_3D_walk_imitation_PPO" />
         <item index="3" class="java.lang.String" itemvalue="Python.Hill_muscle_controller" />
       </list>
     </recent_temporary>
@@ -540,10 +578,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1794" height="1028" extended-state="0" />
+    <frame x="65" y="52" width="1790" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25027934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -552,7 +590,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -570,16 +608,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/walkman_gym_env/valkyrie_bullet_mass_sims_remove_collision.urdf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -600,9 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +637,7 @@
         <state relative-caret-position="495">
           <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -652,10 +678,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="218" column="33" lean-forward="false" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="235" column="38" lean-forward="false" selection-start-line="235" selection-start-column="38" selection-end-line="235" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="841" column="66" lean-forward="true" selection-start-line="841" selection-start-column="66" selection-end-line="841" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="2295">
           <caret line="153" column="62" lean-forward="true" selection-start-line="153" selection-start-column="62" selection-end-line="153" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/valkyrie_bullet_mass_sims_remove_collision.urdf" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/PD_controller.py" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py" />
+    <entry file="file://$PROJECT_DIR$/TRPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/train_3D_walk_imitation_PPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet_mass_sims_fixed_arm.urdf" />
+    <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -684,8 +774,192 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="841" column="66" lean-forward="true" selection-start-line="841" selection-start-column="66" selection-end-line="841" selection-end-column="66" />
+        <state relative-caret-position="192">
+          <caret line="2103" column="56" lean-forward="false" selection-start-line="2103" selection-start-column="55" selection-end-line="2103" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="153" column="62" lean-forward="false" selection-start-line="153" selection-start-column="62" selection-end-line="153" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/valkyrie_bullet_mass_sims_remove_collision.urdf" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/PD_controller.py" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py" />
+    <entry file="file://$PROJECT_DIR$/TRPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet_mass_sims_fixed_arm.urdf" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" />
+    <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/common/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="218" column="33" lean-forward="false" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="232" column="38" lean-forward="false" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/train_3D_walk_imitation_PPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/valkyrie_bullet_mass_sims_remove_collision.urdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="358" column="16" lean-forward="false" selection-start-line="358" selection-start-column="12" selection-end-line="358" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TRPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/train_3D_walk_imitation_PPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="37" column="13" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet.urdf" />
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/walkman_bullet_mass_sims_fixed_arm.urdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="218" column="33" lean-forward="false" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/configuration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="235" column="38" lean-forward="false" selection-start-line="235" selection-start-column="38" selection-end-line="235" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/PD_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/Hill_muscle_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/sensor_signal_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPO/run_3D_walk_imitation_PPO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_motion_capture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="69" column="54" lean-forward="true" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walkman_gym_env/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="1009" column="45" lean-forward="true" selection-start-line="1009" selection-start-column="45" selection-end-line="1009" selection-end-column="45" />
           <folding />
         </state>
       </provider>

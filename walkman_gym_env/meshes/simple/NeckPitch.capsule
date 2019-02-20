@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="/home/enrico/advr-superbuild/robots/iit-walkman-ros-pkg/walkman_urdf/meshes/simple/NeckPitch.STL">
+  <link name="0.00100_0.00100_0.00100">
+    <collision>
+      <origin xyz="0.0006963 -0.03474775 0.11568025" rpy="3.11544366258 0.716101195164 3.07173343433"/>
+      <geometry>
+        <cylinder radius="0.126418" length="0.050705270529"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
