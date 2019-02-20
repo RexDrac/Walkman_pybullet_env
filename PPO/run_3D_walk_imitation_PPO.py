@@ -7,7 +7,7 @@ from agent.agent_PPO import *
 from common.control import *
 from common.logger import logger
 from common.value_trace import *
-from valkyrie_gym_env import Valkyrie
+from walkman_gym_env import Walkman
 import matplotlib.pyplot as plt
 import time
 from common.motion_new import Motion
@@ -34,11 +34,11 @@ class Run():
         self.max_time = 10#16
         self.max_step_per_episode = int(self.max_time*self.network_freq)
 
-        self.env = Valkyrie(
+        self.env = Walkman(
             max_time=self.max_time, renders=True, initial_gap_time=0.1, PD_freq=self.PD_freq,
             Physics_freq=self.Physics_freq,# Kp=config.conf['Kp'], Kd=config.conf['Kd'],
             bullet_default_PD=config.conf['bullet-default-PD'], controlled_joints_list=config.conf['controlled-joints'],
-            logFileName=dir_path, isEnableSelfCollision=True)
+            logFileName=dir_path, isEnableSelfCollision=False)
 
         config.conf['state-dim'] = self.env.stateNumber+1
         self.agent = Agent(self.env, self.config)
@@ -77,7 +77,7 @@ class Run():
         total_reward = 0
         for i in range(self.config.conf['test-num']):#
             quat = self.ref_motion.euler_to_quat(0,0,0)
-            _ = self.env._reset(#Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'],
+            _ = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'],
                                 base_pos_nom=[0,0,1.175], base_orn_nom=quat, fixed_base=False)
             # state = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'], base_pos_nom=[0, 0, 1.175], fixed_base=False)
             q_nom = self.ref_motion.ref_motion_dict()
@@ -114,7 +114,7 @@ class Run():
                 #                  self.config.conf['actor-output-bounds'][1])
                 action = np.array([action]) if len(np.shape(action)) == 0 else np.array(action)
 
-                f = self.env.rejectableForce_xy(1.0 / self.network_freq)
+                # f = self.env.rejectableForce_xy(1.0 / self.network_freq)
                 rgb=self.env._render(roll=0,pitch=0,yaw=0)
                 print(rgb.shape)
                 self.image_list.append(rgb)
@@ -141,9 +141,9 @@ class Run():
                 self.logging.add_run('ref_action', ref_angle)
                 joint_angle = self.control.get_joint_angle()
                 self.logging.add_run('joint_angle', joint_angle)
-                readings = self.env.getExtendedReading()
-                for key, value in readings.items():
-                    self.logging.add_run(key, value)
+                # readings = self.env.getExtendedReading()
+                # for key, value in readings.items():
+                #     self.logging.add_run(key, value)
                 self.logging.add_run('task_reward', info['task_reward'])
                 self.logging.add_run('imitation_reward', info['imitation_reward'])
                 self.logging.add_run('total_reward', info['total_reward'])
@@ -176,7 +176,7 @@ def main():
     os.sys.path.insert(0, parentdir)
     config = Configuration()
     # dir_path = 'PPO/record/FCNN/3D_walk_imitation/without_external_force_disturbance/2018_10_17_15.35.32'  # '2017_05_29_18.23.49/with_force'
-    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_01_11_14.38.17'  # '2017_05_29_18.23.49/with_force'
+    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36'  # '2017_05_29_18.23.49/with_force'
     test = Run(config, dir_path)
     test.test()
 

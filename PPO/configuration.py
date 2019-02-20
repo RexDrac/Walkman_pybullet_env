@@ -119,21 +119,21 @@ class Configuration:
                 "leftAnklePitch", "leftAnkleRoll",])
 
         self.action_bounds = dict([
-            ("torsoYaw", [-1.181, 1.181]),#[-1.329, 1.181]
+            ("torsoYaw", [-1.74533, 1.74533]),#[-1.329, 1.181]
             ("torsoPitch",[-0.13,0.67]),
-            ("torsoRoll", [-0.23, 0.23]),#[-0.23, 0.255]
-            ("rightHipYaw", [-1.1, 0.4141]),
-            ("rightHipRoll", [-0.5515, 0.467]),
-            ("rightHipPitch", [-2.42, 1.619]),
-            ("rightKneePitch", [-0.083, 2.057]),
-            ("rightAnklePitch", [-0.93, 0.65]),
-            ("rightAnkleRoll", [-0.4, 0.4]),
-            ("leftHipYaw", [-0.4141, 1.1]),
-            ("leftHipRoll", [-0.467, 0.5515]),
-            ("leftHipPitch", [-2.42, 1.619]),
-            ("leftKneePitch", [-0.083, 2.057]),
-            ("leftAnklePitch", [-0.93, 0.65]),
-            ("leftAnkleRoll", [-0.4, 0.4]),
+            ("torsoRoll", [-0.8727, 0.6981]),#[-0.23, 0.255]
+            ("rightHipYaw", [-1.5708, 0.8727]),
+            ("rightHipRoll", [-0.8727, 0.6981]),
+            ("rightHipPitch", [-2.0944, 1.0472]),
+            ("rightKneePitch", [0.0, 2.4435]),
+            ("rightAnklePitch", [-1.3963, 0.6981]),
+            ("rightAnkleRoll", [-0.7854, 0.7854]),
+            ("leftHipYaw", [-0.8727, 1.5708]),
+            ("leftHipRoll", [-0.6981, 0.8727]),
+            ("leftHipPitch", [-2.0944, 1.0472]),
+            ("leftKneePitch", [-0.0, 2.4425]),
+            ("leftAnklePitch", [-1.3963, 0.6981]),
+            ("leftAnkleRoll", [-0.7854, 0.7854]),
             ])
         self.normalized_action_bounds = dict([
             ("torsoYaw", [-1.0, 1.0]),
@@ -184,22 +184,25 @@ class Configuration:
         self.conf['HLC-frequency'] = 25
         self.conf['bullet-default-PD'] = False
 
+        #valkyrie 137
+        #walkman 94
+
         self.conf['Kp'] = dict([
-            ("torsoYaw", 1000),
-            ("torsoPitch", 3000),
-            ("torsoRoll", 3000),
-            ("rightHipYaw", 1000),
-            ("rightHipRoll", 1500),  # 1500
-            ("rightHipPitch", 2000),  # -0.49
-            ("rightKneePitch", 2000),  # 1.205
-            ("rightAnklePitch", 2000),  # -0.71
-            ("rightAnkleRoll", 1500),  # 1000
-            ("leftHipYaw", 1000),
-            ("leftHipRoll", 1500),  # 1500
-            ("leftHipPitch", 2000),  # -0.491
-            ("leftKneePitch", 2000),  # 1.205
-            ("leftAnklePitch", 2000),  # -0.71
-            ("leftAnkleRoll", 1500),  # 1000
+            ("torsoYaw", 700),
+            ("torsoPitch", 2000),
+            ("torsoRoll", 2000),
+            ("rightHipYaw", 700),
+            ("rightHipRoll", 1000),  # 1500
+            ("rightHipPitch", 1300),  # -0.49
+            ("rightKneePitch", 1300),  # 1.205
+            ("rightAnklePitch", 1300),  # -0.71
+            ("rightAnkleRoll", 1000),  # 1000
+            ("leftHipYaw", 700),
+            ("leftHipRoll", 1000),  # 1500
+            ("leftHipPitch", 1300),  # -0.491
+            ("leftKneePitch", 1300),  # 1.205
+            ("leftAnklePitch", 1300),  # -0.71
+            ("leftAnkleRoll", 1000),  # 1000
             ("rightShoulderPitch", 700),
             ("rightShoulderRoll", 1500),
             ("rightShoulderYaw", 200),
@@ -211,21 +214,21 @@ class Configuration:
                            ])
 
         self.conf['Kd'] = dict([
-            ("torsoYaw", 100),
-            ("torsoPitch", 300),
-            ("torsoRoll", 300),
-            ("rightHipYaw", 100),
-            ("rightHipRoll", 150),  # 150
-            ("rightHipPitch", 180),  # 180
-            ("rightKneePitch", 180),  # 120
-            ("rightAnklePitch", 120),  # -0.71
-            ("rightAnkleRoll", 90),  # 100
-            ("leftHipYaw", 100),
-            ("leftHipRoll", 150),  # 150
-            ("leftHipPitch", 180),  # 180
-            ("leftKneePitch", 180),  # 120
-            ("leftAnklePitch", 120),  # -0.71
-            ("leftAnkleRoll", 90),  # 100
+            ("torsoYaw", 70),
+            ("torsoPitch", 200),
+            ("torsoRoll", 200),
+            ("rightHipYaw", 70),
+            ("rightHipRoll", 100),  # 150
+            ("rightHipPitch", 120),  # 180
+            ("rightKneePitch", 120),  # 120
+            ("rightAnklePitch", 80),  # -0.71
+            ("rightAnkleRoll", 60),  # 100
+            ("leftHipYaw", 70),
+            ("leftHipRoll", 100),  # 150
+            ("leftHipPitch", 120),  # 180
+            ("leftKneePitch", 120),  # 120
+            ("leftAnklePitch", 80),  # -0.71
+            ("leftAnkleRoll", 60),  # 100
             ("rightShoulderPitch", 10),
             ("rightShoulderRoll", 30),
             ("rightShoulderYaw", 2),
