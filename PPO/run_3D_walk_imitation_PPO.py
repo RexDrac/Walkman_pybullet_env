@@ -176,7 +176,7 @@ def main():
     os.sys.path.insert(0, parentdir)
     config = Configuration()
     # dir_path = 'PPO/record/FCNN/3D_walk_imitation/without_external_force_disturbance/2018_10_17_15.35.32'  # '2017_05_29_18.23.49/with_force'
-    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_07_21.00.36'  # '2017_05_29_18.23.49/with_force'
+    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_20_21.30.53'  # '2017_05_29_18.23.49/with_force'
     test = Run(config, dir_path)
     test.test()
 

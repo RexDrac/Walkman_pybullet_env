@@ -340,8 +340,8 @@ class Configuration:
         self.conf['epoch-num'] = 500
         self.conf['epoch-step-num'] = 5000000
         self.conf['total-step-num'] = 2500000000
-        self.conf['max-train-time'] = 60 #second
-        self.conf['max-test-time'] = 60 #second
+        self.conf['max-train-time'] = 30 #second
+        self.conf['max-test-time'] = 30 #second
         self.conf['test-num'] = 1
         self.conf['rollout-step-num'] = 1
         self.conf['train-step-num'] = 1
