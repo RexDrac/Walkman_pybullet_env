@@ -1,3 +1,0 @@
-model_checkpoint_path: "network"
-all_model_checkpoint_paths: "../../latest_network/saved_networks/network"
-all_model_checkpoint_paths: "network"

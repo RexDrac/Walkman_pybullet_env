@@ -932,7 +932,7 @@ class Walkman(gym.Env):
 
         x_pos_tar = 0.0
         y_pos_tar = 0.0
-        z_pos_tar = 1.175*1.02#1.104 * 1.02
+        z_pos_tar = 1.0*1.02#1.175*1.02#1.104 * 1.02
         x_pos_err = COM_pos_his_yaw[0][0] + x_vel_tar*self._dt_PD - COM_pos_yaw[0][0] #distance per second
         y_pos_err = y_pos_tar - COM_pos_local_yaw[0][1]
         z_pos_err = z_pos_tar - COM_pos_local_yaw[0][2]
@@ -950,7 +950,7 @@ class Walkman(gym.Env):
         # print(tar_COM_vel)
         # print(tar_COM_vel_yaw)
 
-        x_vel_tar = 1.0#0.3
+        x_vel_tar = 0.5#0.3
         y_vel_tar = tar_COM_vel_yaw[0][1]
         z_vel_tar = 0.0
         x_vel_err = np.maximum(x_vel_tar - COM_vel_yaw[0][0],0.0) #No penalization when x_vel_tar<COM_vel_yaw to tolerate higher velocity
@@ -1010,7 +1010,7 @@ class Walkman(gym.Env):
         left_foot_roll_err = left_foot_orn[2]
 
 
-        alpha = 1e-2#1e-2
+        alpha = 1e-3#1e-2
 
         x_pos_reward = math.exp(math.log(alpha)*(x_pos_err/0.7)**2)#1.0
         y_pos_reward = math.exp(math.log(alpha)*(y_pos_err/0.7)**2)#1.0
@@ -3098,4 +3098,19 @@ class Walkman(gym.Env):
             start = COM_dict[parentIdx]
             end = COM
             p.addUserDebugLine(start, end, [0, 0, 1], 1, 1)
+        return
+
+    def createBox(self, basePosition=None, baseEuler=None):
+        if basePosition is None:
+            basePosition = [self.COM_pos[0]+1.0, self.COM_pos[1], 0.2]
+        if baseEuler is None:
+            baseEuler = [0,0,np.random.uniform(-1,1)]
+        shape = [0.1, 2, 0.02]
+        boxCollisionId = p.createCollisionShape(p.GEOM_BOX, halfExtents = shape)
+        boxVisualId = -1
+        density = 700
+        mass = density*shape[0]*shape[1]*shape[2]
+        baseOrientation = p.getQuaternionFromEuler(baseEuler)
+        boxUId = p.createMultiBody(mass, boxCollisionId, boxVisualId, basePosition, baseOrientation)
+
         return

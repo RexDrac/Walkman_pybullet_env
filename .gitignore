@@ -1,0 +1,12 @@
+
+\.idea/
+
+PPO/PPO/
+
+agent/__pycache__/
+
+common/__pycache__/
+
+TRPO/__pycache__/
+
+walkman_gym_env/__pycache__/

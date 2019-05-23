@@ -35,7 +35,7 @@ class Run():
         self.max_step_per_episode = int(self.max_time*self.network_freq)
 
         self.env = Walkman(
-            max_time=self.max_time, renders=True, initial_gap_time=0.1, PD_freq=self.PD_freq,
+            max_time=self.max_time, renders=False, initial_gap_time=0.1, PD_freq=self.PD_freq,
             Physics_freq=self.Physics_freq,# Kp=config.conf['Kp'], Kd=config.conf['Kd'],
             bullet_default_PD=config.conf['bullet-default-PD'], controlled_joints_list=config.conf['controlled-joints'],
             logFileName=dir_path, isEnableSelfCollision=False)
@@ -70,6 +70,8 @@ class Run():
         plt.axis('off')
 
         self.image_list = []
+        self.front_image_list = []
+        self.left_image_list = []
 
         self.ref_motion = Motion(config=self.config, dsr_gait_freq=0.6)
 
@@ -80,20 +82,20 @@ class Run():
             _ = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'],
                                 base_pos_nom=[0,0,1.175], base_orn_nom=quat, fixed_base=False)
             # state = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'], base_pos_nom=[0, 0, 1.175], fixed_base=False)
+            self.ref_motion.reset(index=0)
+            # self.ref_motion.random_count()
+            self.control.reset(w_imitation=self.config.conf['imitation-weight'], w_task=self.config.conf['task-weight'])
             q_nom = self.ref_motion.ref_motion_dict()
             base_orn_nom = self.ref_motion.get_base_orn()
-
             # state = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'], q_nom=q_nom, base_orn_nom=base_orn_nom, base_pos_nom=[0, 0, 1.175], fixed_base=False)
             # self.env._setupCamera()
             self.env.startRendering()
             self.env._startLoggingVideo()
-            self.ref_motion.reset(index=0)
-            # self.ref_motion.random_count()
-
-            self.control.reset(w_imitation=self.config.conf['imitation-weight'], w_task=self.config.conf['task-weight'])
-
 
             for step in range(self.max_step_per_episode):
+                if step%25==0:
+                    self.env.createBox()
+
                 # self.env._setupCamera()
                 t = time.time()
                 gait_phase = self.ref_motion.count / self.ref_motion.dsr_length
@@ -117,7 +119,9 @@ class Run():
                 # f = self.env.rejectableForce_xy(1.0 / self.network_freq)
                 rgb=self.env._render(roll=0,pitch=0,yaw=0)
                 print(rgb.shape)
-                self.image_list.append(rgb)
+                self.left_image_list.append(rgb)
+                rgb=self.env._render(roll=0,pitch=0,yaw=90)
+                self.front_image_list.append(rgb)
 
                 # action = self.control.rescale(ref_action, self.config.conf['action-bounds'],
                 #                               self.config.conf['actor-output-bounds'])
@@ -164,11 +168,17 @@ class Run():
         self.logging.save_run()
 
 
-        clip = ImageSequenceClip(self.image_list, fps=25)
-        clip.write_gif(self.dir_path+'/test.gif')
-        clip.write_videofile(self.dir_path+'/test.mp4', fps=25, audio=False)
+        # clip = ImageSequenceClip(self.image_list, fps=25)
+        # clip.write_gif(self.dir_path+'/test.gif')
+        # clip.write_videofile(self.dir_path+'/test.mp4', fps=25, audio=False)
 
+        front_clip = ImageSequenceClip(self.front_image_list, fps=25)
+        front_clip.write_gif(self.dir_path+'/front.gif')
+        # front_clip.write_videofile(self.dir_path+'/front.mp4', fps=25, audio=False)
 
+        left_clip = ImageSequenceClip(self.left_image_list, fps=25)
+        left_clip.write_gif(self.dir_path+'/left.gif')
+        # left_clip.write_videofile(self.dir_path+'/left.mp4', fps=25, audio=False)
 
 def main():
     currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -176,7 +186,7 @@ def main():
     os.sys.path.insert(0, parentdir)
     config = Configuration()
     # dir_path = 'PPO/record/FCNN/3D_walk_imitation/without_external_force_disturbance/2018_10_17_15.35.32'  # '2017_05_29_18.23.49/with_force'
-    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_20_21.30.53'  # '2017_05_29_18.23.49/with_force'
+    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_25_15.35.55'  # '2017_05_29_18.23.49/with_force'
     test = Run(config, dir_path)
     test.test()
 

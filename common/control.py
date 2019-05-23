@@ -226,7 +226,7 @@ class Control:
         return reward
 
     def reward_joint_angle(self):
-        alpha = 1e-2#1e-3  # 1e-1
+        alpha = 1e-3  # 1e-1
         err_norm = 20.0/180.0*np.pi#20
         err = (self.ref_joint_angle - self.get_joint_angle()) / err_norm#0.4#0.2
         reward = np.sum(np.exp(np.log(alpha) * (err) ** 2) * self.w_joints) / np.sum(self.w_joints)
@@ -234,7 +234,7 @@ class Control:
         return reward
 
     def reward_joint_vel(self):
-        alpha = 1e-2#1e-3  # 1e-1
+        alpha = 1e-3  # 1e-1
         err_norm = 150.0/180.0*np.pi#150
         err = (self.ref_joint_vel - self.get_joint_vel()) / err_norm#0.4#0.2
         reward = np.sum(np.exp(np.log(alpha) * (err) ** 2) * self.w_joints) / np.sum(self.w_joints)
