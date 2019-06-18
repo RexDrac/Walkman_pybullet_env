@@ -331,7 +331,7 @@ class Walkman(gym.Env):
         self.linkCOMVel = dict()
         self.total_mass = 0.0
 
-        self.base_pos_nom = np.array([0, 0, 1.175])  # 1.175 straight #1.025 bend
+        self.base_pos_nom = np.array([0, 0, 1.175])  #1.275 for walkman with modified base 1.175 straight #1.025 bend
         self.base_orn_nom = np.array([0, 0, 0, 1])  # x,y,z,w
         self.plane_pos_nom = np.array([0.,0.,0.])
         self.plane_orn_nom = np.array([0.,0.,0.,1.])

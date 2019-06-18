@@ -79,7 +79,8 @@ class Run():
             # print(self.motion.ref_motion())
             print(q_nom)
             base_orn_nom = self.motion.get_base_orn()#[0.000,0.078,0.000,0.997]#[0,0,0,1]
-            _ = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'], base_pos_nom=[0,0,1.5], fixed_base=True, q_nom=q_nom, base_orn_nom=base_orn_nom)
+            print(base_orn_nom)
+            _ = self.env._reset(Kp=self.config.conf['Kp'], Kd=self.config.conf['Kd'], base_pos_nom=[0,0,1.5], fixed_base=False, q_nom=q_nom, base_orn_nom=base_orn_nom)
             left_foot_link_state = p.getLinkState(self.env.r, self.env.jointIdx['leftAnkleRoll'], computeLinkVelocity=0)
             left_foot_link_dis = np.array(left_foot_link_state[0])
             right_foot_link_state = p.getLinkState(self.env.r, self.env.jointIdx['rightAnkleRoll'], computeLinkVelocity=0)

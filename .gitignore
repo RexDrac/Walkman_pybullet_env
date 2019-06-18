@@ -4,3 +4,5 @@ Valkyrie_SAC/
 __pycache__/
 
 *.mp4
+
+logs/
