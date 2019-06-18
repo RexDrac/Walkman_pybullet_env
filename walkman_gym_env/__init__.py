@@ -928,7 +928,7 @@ class Walkman(gym.Env):
         COM_pos_local_yaw = np.transpose(Rz_i @ COM_pos_local.transpose())  # base velocity in adjusted yaw frame
         # print(COM_pos_local)
         # print(COM_pos_local_yaw)
-        x_vel_tar = 1.0#0.3
+        x_vel_tar = 0.5#0.3
 
         x_pos_tar = 0.0
         y_pos_tar = 0.0
@@ -951,7 +951,7 @@ class Walkman(gym.Env):
         # print(tar_COM_vel_yaw)
 
         x_vel_tar = 0.5#0.3
-        y_vel_tar = tar_COM_vel_yaw[0][1]
+        y_vel_tar = 0 #tar_COM_vel_yaw[0][1]
         z_vel_tar = 0.0
         x_vel_err = np.maximum(x_vel_tar - COM_vel_yaw[0][0],0.0) #No penalization when x_vel_tar<COM_vel_yaw to tolerate higher velocity
         y_vel_err = y_vel_tar - COM_vel_yaw[0][1]
@@ -1043,17 +1043,21 @@ class Walkman(gym.Env):
 
         # print(x_pos_reward,z_pos_reward,x_vel_reward,z_vel_reward,pelvis_orient_reward,chest_orient_reward)
         reward = (
-                2.0 * y_pos_reward + 4.0 * z_pos_reward
-                + 1.0 * y_vel_reward + 2.0 * z_vel_reward
-                + 1.0 * torso_pitch_reward + + 1.0 * torso_roll_reward
-                + 1.0 * pelvis_pitch_reward + 1.0 * pelvis_roll_reward \
+                # 2.0 * y_pos_reward
+                + 4.0 * z_pos_reward
+                + 1.0 * y_vel_reward
+                + 1.0 * z_vel_reward
+                + 1.0 * torso_pitch_reward
+                + 1.0 * torso_roll_reward
+                + 1.0 * pelvis_pitch_reward
+                + 1.0 * pelvis_roll_reward \
                 # + 2.0 * torso_pos_reward
                 + 4.0 * yaw_vel_reward
                 + 1.0 * feet_force_reward
-                + 8.0*x_vel_reward
+                + 12.0*x_vel_reward
                 #+ 10.0*base_x_vel_reward
                  ) \
-                * 10 / (2.0 + 4.0 + 2.0 + 1.0 + 1.0 + 1.0 + 1.0 + 1.0 + 4.0 + 1.0 + 8.0)  # 5.0
+                * 10 / (4.0 + 1.0 + 1.0 + 1.0 + 1.0 + 1.0 + 1.0 + 4.0 + 1.0 + 12.0)  # 5.0
 
         # reward = (
         #         2.0 * y_pos_reward + 4.0 * z_pos_reward \
@@ -1073,11 +1077,11 @@ class Walkman(gym.Env):
         if not (self.checkGroundContact('right') or self.checkGroundContact('left')): # both feet lost contact
             reward += 0  # 1 TODO increase penalty for losing contact with the ground
         else:
-            reward +=1
-        if self.checkFall():
-            reward = 0
-        else:
-            reward +=1#bonus for staying alive
+            reward +=2
+        # if self.checkFall():
+        #     reward = 0
+        # else:
+        #     reward +=1#bonus for staying alive
 
         # velocity_penalty = 0
         # for key in self.controlled_joints:  # TODO
@@ -1087,20 +1091,20 @@ class Walkman(gym.Env):
         #     velocity_penalty -= (joint_state[1]) ** 2
         # velocity_penalty = 10e-2*velocity_penalty / len(self.controlled_joints)
         # penalize reward when torque
-        torque_penalty = 0
-        for key in self.controlled_joints:  # TODO
-            joint_state = p.getJointState(self.r, self.jointIdx[key])
-            # torque_penalty -= 1.0 * abs(joint_state[3] / self.u_max[key])
-            # torque_penalty -= (joint_state[3] / self.u_max[key])**2
-            torque_penalty -= (joint_state[3]) ** 2
-        torque_penalty = 1e-4*torque_penalty / len(self.controlled_joints)
-        # # penalize power rate of joint motoUntitled Folderr
-        # power_penalty = 0
+        # torque_penalty = 0
         # for key in self.controlled_joints:  # TODO
         #     joint_state = p.getJointState(self.r, self.jointIdx[key])
-        #     # power_penalty -= 1 * abs(joint_state[3] / self.u_max[key]) * abs(joint_state[1] / self.v_max[key])
-        #     power_penalty -= 1 * abs(joint_state[3]) * abs(joint_state[1])
-        # power_penalty = 0.005*power_penalty / len(self.controlled_joints) #0.005#0.002
+        #     # torque_penalty -= 1.0 * abs(joint_state[3] / self.u_max[key])
+        #     # torque_penalty -= (joint_state[3] / self.u_max[key])**2
+        #     torque_penalty -= (joint_state[3]) ** 2
+        # torque_penalty = 1e-4*torque_penalty / len(self.controlled_joints)
+        # penalize power rate of joint motoUntitled Folderr
+        power_penalty = 0
+        for key in self.controlled_joints:  # TODO
+            joint_state = p.getJointState(self.r, self.jointIdx[key])
+            # power_penalty -= 1 * abs(joint_state[3] / self.u_max[key]) * abs(joint_state[1] / self.v_max[key])
+            power_penalty -= 1 * abs(joint_state[3]) * abs(joint_state[1])
+        power_penalty = 0.005*power_penalty / len(self.controlled_joints) #0.005#0.002
         # # penalize change in torque
         # torque_change_penalty = 0
         # for key in self.controlled_joints:
@@ -1110,8 +1114,8 @@ class Walkman(gym.Env):
         #reward += 2*velocity_penalty
         #reward += 30 *velocity_penalty/len(self.controlled_joints)
         #reward += 30 * power_penalty / len(self.controlled_joints) #30
-        #reward += 5 * power_penalty
-        reward += torque_penalty
+        reward += power_penalty
+        # reward += torque_penalty
 
         reward_term = []
         # reward_term = dict([

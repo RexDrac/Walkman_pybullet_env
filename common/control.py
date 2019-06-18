@@ -147,8 +147,8 @@ class Control:
         reward_joint_angle = self.reward_joint_angle()
         reward_joint_vel = self.reward_joint_vel()
         reward_contact = self.reward_foot_contact()
-        # reward_imitation = (10 * reward_joint_angle +reward_contact) * self.reward_scale
-        reward_imitation = (10 * (3 * reward_joint_angle + reward_joint_vel) / 4.0 +reward_contact) * self.reward_scale
+        reward_imitation = (10 * reward_joint_angle +reward_contact) * self.reward_scale
+        # reward_imitation = (10 * (3 * reward_joint_angle + reward_joint_vel) / 4.0 +reward_contact) * self.reward_scale
         reward = self.w_task*reward_task + self.w_imitation*reward_imitation# + 10 * self.reward_action_bound(self.action_control, self.control_bound)
         #reward = reward_task
         # print(time.time()-t)

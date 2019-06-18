@@ -35,12 +35,12 @@ class Run():
         self.max_step_per_episode = int(self.max_time*self.network_freq)
 
         self.env = Walkman(
-            max_time=self.max_time, renders=False, initial_gap_time=0.1, PD_freq=self.PD_freq,
+            max_time=self.max_time, renders=True, initial_gap_time=0.1, PD_freq=self.PD_freq,
             Physics_freq=self.Physics_freq,# Kp=config.conf['Kp'], Kd=config.conf['Kd'],
             bullet_default_PD=config.conf['bullet-default-PD'], controlled_joints_list=config.conf['controlled-joints'],
             logFileName=dir_path, isEnableSelfCollision=False)
 
-        config.conf['state-dim'] = self.env.stateNumber+1
+        config.conf['state-dim'] = self.env.stateNumber+2
         self.agent = Agent(self.env, self.config)
         self.agent.load_weight(dir_path+'/best_network')
 
@@ -104,8 +104,8 @@ class Run():
 
                 state = self.env.getExtendedObservation()
                 state = np.squeeze(state)
-                state = np.append(state, [gait_phase])
-                # state = np.append(state, [np.sin(np.pi * 2 * gait_phase), np.cos(np.pi * 2 * gait_phase)])
+                # state = np.append(state, [gait_phase])
+                state = np.append(state, [np.sin(np.pi * 2 * gait_phase), np.cos(np.pi * 2 * gait_phase)])
                 # state = np.append(state,[0,0])
 
                 action, actor_info = self.agent.agent.actor.get_action(state)
@@ -186,7 +186,7 @@ def main():
     os.sys.path.insert(0, parentdir)
     config = Configuration()
     # dir_path = 'PPO/record/FCNN/3D_walk_imitation/without_external_force_disturbance/2018_10_17_15.35.32'  # '2017_05_29_18.23.49/with_force'
-    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_02_25_15.35.55'  # '2017_05_29_18.23.49/with_force'
+    dir_path = 'PPO/record/3D_walk_imitation/without_external_force_disturbance/2019_05_25_20.18.31'  # '2017_05_29_18.23.49/with_force'
     test = Run(config, dir_path)
     test.test()
 

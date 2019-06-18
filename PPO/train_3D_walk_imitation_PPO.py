@@ -46,7 +46,7 @@ class Train():
             isEnableSelfCollision=False,
         )
 
-        config.conf['state-dim'] = self.env.stateNumber + 1# 2 more variables for cyclic motion
+        config.conf['state-dim'] = self.env.stateNumber + 2# 2 more variables for cyclic motion
         self.agent = Agent(self.env, self.config)
 
         self.episode_count = 0
@@ -100,8 +100,8 @@ class Train():
         imitation_rewards = []
 
         self.control.reset(w_imitation=self.config.conf['imitation-weight'],w_task=self.config.conf['task-weight'])
-        self.ref_motion.reset(index=0)
-        # self.ref_motion.reset()
+        # self.ref_motion.reset(index=0)
+        self.ref_motion.reset()
         self.episode_count+=1
         self.ref_motion.random_count()
         q_nom = self.ref_motion.ref_motion_dict()
@@ -141,8 +141,8 @@ class Train():
 
             state = self.env.getExtendedObservation()
             state = np.squeeze(state)
-            state = np.append(state, [gait_phase])
-            # state = np.append(state, [np.sin(np.pi*2*gait_phase), np.cos(np.pi*2*gait_phase)])
+            # state = np.append(state, [gait_phase])
+            state = np.append(state, [np.sin(np.pi*2*gait_phase), np.cos(np.pi*2*gait_phase)])
             action, actor_info = self.agent.agent.actor.get_action(state)
             mean = actor_info['mean']
             logstd = actor_info['logstd']
@@ -156,8 +156,8 @@ class Train():
 
             #next_state, reward, terminal, info = self.control.control_step(action, self.force, ref_action)
             next_state = np.squeeze(next_state)
-            # next_state = np.append(next_state, [np.sin(np.pi*2*gait_phase), np.cos(np.pi*2*gait_phase)])
-            next_state = np.append(next_state, [next_gait_phase])
+            next_state = np.append(next_state, [np.sin(np.pi*2*gait_phase), np.cos(np.pi*2*gait_phase)])
+            # next_state = np.append(next_state, [next_gait_phase])
 
             observations.append(state)
             actions.append(action)
@@ -367,8 +367,8 @@ class Train():
 
                 state = self.env.getExtendedObservation()
                 state = np.squeeze(state)
-                # state = np.append(state, [np.sin(np.pi * 2 * gait_phase), np.cos(np.pi * 2 * gait_phase)])
-                state = np.append(state, [gait_phase])
+                state = np.append(state, [np.sin(np.pi * 2 * gait_phase), np.cos(np.pi * 2 * gait_phase)])
+                # state = np.append(state, [gait_phase])
                 action, actor_info = self.agent.agent.actor.get_action(state)
                 mean = actor_info['mean']
                 logstd = actor_info['logstd']

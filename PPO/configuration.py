@@ -265,7 +265,7 @@ class Configuration:
 
         self.conf['critic-l2-reg'] = 1e-2
         self.conf['critic-lr'] = 1e-3
-        self.conf['critic-layer-size'] = [256, 256]#[100,50,25]#[64, 64]#[400,400]
+        self.conf['critic-layer-size'] = [128, 128]#[100,50,25]#[64, 64]#[400,400]
         self.conf['critic-activation-fn'] = ['relu', 'relu', 'None']#['relu', 'relu', 'relu', 'None']#['relu', 'relu', 'None']#['leaky_relu', 'leaky_relu', 'leaky_relu', 'None']
         self.conf['critic-dropout'] = False
         self.conf['critic-dropout-rate'] = 0.5
@@ -285,7 +285,7 @@ class Configuration:
         self.conf['actor-observation-norm'] = False #use batch norm to normalize observations
         self.conf['actor-l2-reg'] = 1e-3
         self.conf['actor-lr'] = 3e-4
-        self.conf['actor-layer-size'] = [256, 256]#[100,50,25]#[64, 64]#[400,400]
+        self.conf['actor-layer-size'] = [128, 128]#[100,50,25]#[64, 64]#[400,400]
         self.conf['actor-activation-fn'] = ['relu', 'relu', 'None']#['relu', 'relu', 'relu', 'None']#['relu', 'relu', 'None']#['leaky_relu', 'leaky_relu', 'leaky_relu', 'None']
         self.conf['actor-dropout'] = False
         self.conf['actor-dropout-rate'] = 0.5
